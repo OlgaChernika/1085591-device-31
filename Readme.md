@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Olga Chernikova](https://up.htmlacademy.ru/htmlcss/31/user/1085591).
-* Наставник: `Неизвестно`.
+* Наставник: [Павел Позняк](https://up.htmlacademy.ru/htmlcss/31/user/907403).
 
 ---
 
