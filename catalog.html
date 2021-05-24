@@ -59,47 +59,39 @@
       <h2>Фильтр:</h2>
       <form action="http://echo.htmlacademy.ru" method="get">
       <fieldset>
-        <!-- Тут позже будет кастомный ползунок  -->
-        <label>Стоимость
-        <input type="range" name="price" min="0" max="5000" step="1" value="2500">
-        </label>
-        <label>от
-          <input name="min-price" type="text" value="0">
-        </label>
-        <label>до
-          <input name="max-price" type="text" value="5000">
-        </label>
+        <legend>Стоимость</legend>
+        <div><!-- Тут позже будет кастомный ползунок --></div>
       </fieldset>
       <fieldset>
         <legend>Цвет</legend>
         <ul>
           <li>
-            <label>
-              <input type="checkbox" name="black" checked>
+            <label for="color-black">
+              <input type="checkbox" id="color-black" name="color" value="black" checked>
               Чёрный
             </label>
           </li>
           <li>
-            <label>
-              <input type="checkbox" name="white" >
+            <label for="color-white">
+              <input type="checkbox" id="color-white" name="color" value="white" >
               Белый
             </label>
           </li>
           <li>
-            <label>
-              <input type="checkbox" name="blue" checked>
+            <label for="color-blue">
+              <input type="checkbox" id="color-blue" name="color" value="blue" checked>
               Синий
             </label>
           </li>
           <li>
-            <label>
-              <input type="checkbox" name="red" checked>
+            <label for="color-red">
+              <input type="checkbox" id="color-red" name="color" value="red" checked>
               Красный
             </label>
           </li>
           <li>
-            <label>
-              <input type="checkbox" name="pink" >
+            <label for="color-pink">
+              <input type="checkbox" id="color-pink" name="color" value="pink">
               Розовый
             </label>
           </li>
@@ -109,25 +101,25 @@
         <legend>Bluetooth</legend>
         <ul>
           <li>
-            <label>
-              <input type="radio" name="bluetooth-yes">
+            <label for="bluetooth-yes">
+              <input type="radio" id="bluetooth-yes" name="bluetooth" value="bluetooth-yes">
               Есть
             </label>
           </li>
           <li>
-            <label>
-              <input type="radio" name="bluetooth-no">
+            <label for="bluetooth-no">
+              <input type="radio" id="bluetooth-no" name="bluetooth" value="bluetooth-no">
               Нет
             </label>
           </li>
         </ul>
       </fieldset>
-      <button type="submit">показать</button>
+      <button type="submit">Показать</button>
       </form>
     </section>
     <section>
       <div>
-        <h2>сортировка:</h2>
+        <h2>Сортировка:</h2>
         <ul>
           <li>
             <a href="#">По цене</a>
@@ -158,64 +150,55 @@
           <h3>
             <a href="#">Любительская селфи-палка</a>
           </h3>
+          <span>1 100 руб.</span>
           <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Любительская селфи-палка">
-          <span>new</span>
-          <p>1 100 руб.</p>
-          <a href="#">в корзину</a>
+          <a href="#">В корзину</a>
           <a href="#">Добавить к сравнению</a>
         </li>
         <li>
           <h3>
             <a href="#">Профессиональная селфи-палка</a>
           </h3>
+          <span>1 500 руб.</span>
           <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Профессиональная 
           селфи-палка">
-          <span>new</span>
-          <p>1 500 руб.</p>
-          <a href="#">в корзину</a>
+          <a href="#">В корзину</a>
           <a href="#">Добавить к сравнению</a>
         </li>
         <li>
           <h3>
             <a href="#">Непотопляемая селфи-палка</a>
           </h3>
+          <span>1 500 руб.</span>
           <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Непотопляемая селфи-палка">
-          <span>new</span>
-          <p>1 500 руб.</p>
-          <a href="#">в корзину</a>
+          <a href="#">В корзину</a>
           <a href="#">Добавить к сравнению</a>
         </li>
         <li>
           <h3>
             <a href="#">Селфи-палка «Следуй за мной»</a>
           </h3>
+          <span>1 900 руб.</span>
           <img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-          <span>new</span>
-          <p>1 900 руб.</p>
-          <a href="#">в корзину</a>
+          <a href="#">В корзину</a>
           <a href="#">Добавить к сравнению</a>
         </li>
       </ul>
-    </section>
-    <section>
-      <h2>Пагинация</h2>
-      <ul>
-        <li>
-            <a href="#">назад</a>
-        </li>
-        <li>
-          <a href="#">1</a>
-        </li>
-        <li>
-          <a href="#">2</a>
-        </li>
-        <li>
-          <a href="#">3</a>
-        </li>
-        <li>
-          <a href="#">вперед</a>
-        </li>
-      </ul>
+      <div>
+          <a href="#">Назад</a>
+          <ul>
+            <li>
+              <a href="#">1</a>
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+          </ul>
+          <a href="#">Вперед</a>
+        </div>
     </section>
   </main>
   <footer>
