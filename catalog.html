@@ -2,9 +2,9 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Девайс</title>
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="use-credentials">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -23,9 +23,9 @@
     <form class="header-search search-icon" action="http://echo.htmlacademy.ru" method="get">
       <label class="search-field visually-hidden" for="search">Поиск по сайту</label>
       <input class="search-input" id="search" type="text" name="search" placeholder="Поиск по сайту">
-      <button class="search-button" type="submit">Найти</button>
+      <button class="search-button btn" type="submit">Найти</button>
     </form>
-    <ul class="top-menu header-top-menu">
+    <ul class="top-menu header-top-menu list-reset">
       <li class="top-menu-item">
         <a class="header-login-link"href="#">Валентин Петухов</a>
       </li>
@@ -40,27 +40,27 @@
       </li>
     </ul>
     <nav class="header-nav">
-      <ul class="site-nav header-site-nav">
+      <ul class="site-nav header-site-nav list-reset">
         <li class="catalog-item">
           <a class="site-nav-link header-link" href="catalog.html">Каталог товаров</a>
-          <ul class="catalog-nav">
+          <ul class="catalog-nav list-reset">
             <li class="catalog-nav-item">
-              <a href="catalog.html">Виртуальная реальность</a>
+              <a class="catalog-nav-link" href="catalog.html">Виртуальная реальность</a>
             </li>
             <li  class="catalog-nav-item">
-              <a href="catalog.html">Моноподы для селфи</a>
+              <a class="catalog-nav-link" href="catalog.html">Моноподы для селфи</a>
             </li>
             <li class="catalog-nav-item">
-              <a href="catalog.html">Экшн-камеры</a>
+              <a class="catalog-nav-link" href="catalog.html">Экшн-камеры</a>
             </li>
             <li class="catalog-nav-item">
-              <a href="catalog.html">Фитнес-браслеты</a>
+              <a class="catalog-nav-link" href="catalog.html">Фитнес-браслеты</a>
             </li>
             <li class="catalog-nav-item">
-              <a href="catalog.html">Умные часы</a>
+              <a class="catalog-nav-link" href="catalog.html">Умные часы</a>
             </li>
             <li class="catalog-nav-item">
-              <a href="catalog.html">Квадрокоптер</a>
+              <a class="catalog-nav-link" href="catalog.html">Квадрокоптер</a>
             </li>
           </ul>
         </li>
@@ -72,7 +72,7 @@
   </header>
   <main>
     <h1 class="inner-page-title">Моноподы для селфи</h1>
-    <ul class="breadcrumbs">
+    <ul class="breadcrumbs list-reset">
       <li class="readcrumbs-item">
         <a class="breadcrumbs-link" href="index.html">Главная</a>
       </li>
@@ -92,7 +92,7 @@
       </fieldset>
       <fieldset>
         <legend class="filter-legend">Цвет</legend>
-        <ul>
+        <ul class="list-reset">
           <li>
             <input type="checkbox" id="color-black" name="color" value="black" checked>
             <label for="color-black">Чёрный</label>
@@ -117,7 +117,7 @@
       </fieldset>
       <fieldset>
         <legend class="filter-legend">Bluetooth</legend>
-        <ul>
+        <ul class="list-reset">
           <li>
             <input type="radio" id="bluetooth-yes" name="bluetooth" value="bluetooth-yes">
             <label for="bluetooth-yes">Есть</label>
@@ -128,13 +128,13 @@
           </li>
         </ul>
       </fieldset>
-      <button class="button filter-button" type="submit">Показать</button>
+      <button class="button filter-button btn" type="submit">Показать</button>
       </form>
     </section>
     <section class="catalog">
       <div class="sorting">
         <h2 class="sorting-title filter-section-title">Сортировка:</h2>
-        <ul sorting-list>
+        <ul class="sorting-list list-reset">
           <li>
             <a class="sorting-link sorting-link-current" href="#">По цене</a>
           </li>
@@ -145,7 +145,7 @@
             <a class="sorting-link" href="#">По популярности</a>
           </li>
         </ul>
-        <ul class="sorting-icon-list">
+        <ul class="sorting-icon-list list-reset">
           <li>
             <a class="sorting-icon-up icon-current" href="#" aria-label="Сортировать товары по возрастанию">
               <svg width="10" height="11"></svg>
@@ -159,7 +159,7 @@
         </ul>
       </div>
       <h2 class="visually-hidden">Список товаров</h2>
-      <ul class="catalog-list">
+      <ul class="catalog-list list-reset">
         <li class="product-card">
           <h3 class="product-title">
             <a class="product-link" href="#">Любительская селфи-палка</a>
@@ -199,7 +199,7 @@
       </ul>
       <div class="pagination">
           <a class="pagination-button back-button" href="#">Назад</a>
-          <ul class="pagination-list">
+          <ul class="pagination-list list-reset">
             <li>
               <a class="pagination-link pagination-link-current" href="#">1</a>
             </li>
@@ -218,7 +218,7 @@
     <a class="footer-logo logo-device" href="index.html">
       <img src="img/device-logo2.svg" width="163" height="35" alt="Логотип DEVICE">
     </a>
-    <ul class="top-menu footer-top-menu">
+    <ul class="top-menu footer-top-menu list-reset">
       <li class="top-menu-item footer-login-link">
         <a class="top-menu-link footer-link" href="#">Валентин Петухов</a>
       </li>
@@ -233,15 +233,15 @@
       </li>
     </ul>
     <nav class="footer-nav">
-      <ul class="site-nav footer-site-nav">
+      <ul class="site-nav footer-site-nav list-reset">
         <li><a class="site-nav-link footer-link" href="#">Доставка</a></li>
         <li><a class="site-nav-link footer-link" href="#">Гарантия</a></li>
         <li><a class="site-nav-link footer-link" href="#">Контакты</a></li>
       </ul>
     </nav>
     <p class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-    <p class="footer-tel"><a href="tel:+78005558628">Тел.: +7 800 555-86-28</a></p>
-    <ul class="social-list">
+    <p class="footer-tel"><a class="footer-tel-link" href="tel:+78005558628">Тел.: +7 800 555-86-28</a></p>
+    <ul class="social-list list-reset">
       <li class="social-item">
         <a class="social-link fb-link" href="#" aria-label="Наша страница на Facebook"></a>
       </li>
@@ -266,9 +266,9 @@
       <label class="user-comment-field">Текст письма:
         <textarea class="user-comment" name="comment" rows="4" cols="70">В свободной форме</textarea>
       </label>
-      <button class="button-send button" type="submit">Отправить</button>
+      <button class="button-send button btn" type="submit">Отправить</button>
     </form>
-    <button class="button-close button-modal" type="button" aria-label="Закрыть окно"></button>
+    <button class="button-close button-modal btn" type="button" aria-label="Закрыть окно"></button>
   </section>
 </body>
 </html>

@@ -2,9 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: Девайс</title>
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="use-credentials">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> -->
+    <link rel="preload" href="fonts/gilroyextrabold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/gilroylight.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -23,41 +27,41 @@
       <form class="header-search search-icon" action="http://echo.htmlacademy.ru" method="get">
         <label class="search-field visually-hidden" for="search">Поиск по сайту</label>
         <input class="search-input" id="search" type="text" name="search" placeholder="Поиск по сайту">
-        <button class="search-button" type="submit">Найти</button>
+        <button class="search-button btn" type="submit">Найти</button>
       </form>
-      <ul class="top-menu header-top-menu">
+      <ul class="top-menu header-top-menu list-reset">
         <li class="top-menu-item">
-          <a class="header-login-link" href="#">Войти</a>
+          <a class="header-login-link header-link" href="#">Войти</a>
         </li>
         <li class="top-menu-item">
-          <a class="header-compare-link" href="#">Сравнить</a>
+          <a class="header-compare-link header-link" href="#">Сравнить</a>
         </li>
         <li class="top-menu-item">
-          <a class="header-basket-link" href="#">Корзина</a>
+          <a class="header-basket-link header-link" href="#">Корзина</a>
         </li>
       </ul>
       <nav class="header-nav">
-        <ul class="site-nav header-site-nav">
+        <ul class="site-nav header-site-nav list-reset">
           <li class="catalog-item">
             <a class="site-nav-link header-link" href="catalog.html">Каталог товаров</a>
-            <ul class="catalog-nav">
+            <ul class="catalog-nav list-reset">
               <li class="catalog-nav-item">
-                <a href="catalog.html">Виртуальная реальность</a>
+                <a class="catalog-nav-link" href="catalog.html">Виртуальная реальность</a>
               </li>
               <li class="catalog-nav-item">
-                <a href="catalog.html">Моноподы для селфи</a>
+                <a class="catalog-nav-link" href="catalog.html">Моноподы для селфи</a>
               </li>
               <li class="catalog-nav-item">
-                <a href="catalog.html">Экшн-камеры</a>
+                <a class="catalog-nav-link" href="catalog.html">Экшн-камеры</a>
               </li>
               <li class="catalog-nav-item">
-                <a href="catalog.html">Фитнес-браслеты</a>
+                <a class="catalog-nav-link" href="catalog.html">Фитнес-браслеты</a>
               </li>
               <li class="catalog-nav-item">
-                <a href="catalog.html">Умные часы</a>
+                <a class="catalog-nav-link" href="catalog.html">Умные часы</a>
               </li>
               <li class="catalog-nav-item">
-                <a href="catalog.html">Квадрокоптер</a>
+                <a class="catalog-nav-link" href="catalog.html">Квадрокоптер</a>
               </li>
             </ul>
           </li>
@@ -82,7 +86,7 @@
             <a href="#">Третий слайд</a>
           </li>
         </ul>
-        <ul class="promo-list">
+        <ul class="promo-list list-reset">
           <li class="promo-item slider-1 active">
             <img class="promo-image" src="img/slider-1.png" width="385" height="486" alt="Палка для селфи">
             <div class="promo-wrapper">
@@ -129,7 +133,7 @@
       </section>
       <section class="product-categories">
         <h2 class="visually-hidden">Категории товаров</h2>
-        <ul class="categories-list">
+        <ul class="categories-list list-reset">
           <li class="categories-item">
             <a class="categories-link" href="catalog.html">
               <div class="categories-img ctg-1"></div>
@@ -168,7 +172,7 @@
       </section>
       <section class="service">
         <h2 class="visually-hidden">Сервис</h2>
-        <ul class="service-control-list">
+        <ul class="service-control-list list-reset">
           <li class="service-tab tab-active">
             <a class="service-link" href="#">Доставка</a>
           </li>
@@ -179,8 +183,8 @@
             <a class="service-link" href="#">Кредит</a>
           </li>
         </ul>
-        <ul class="service-slider">
-          <li class="service-item item-devivery">
+        <ul class="service-slider list-reset">
+          <li class="service-item item-delivery">
             <h3 class="service-title">Доставка</h3>
             <p class="service-info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
@@ -196,7 +200,7 @@
       </section>
       <section class="brands">
         <h2 class="visually-hidden">Популярные бренды</h2>
-        <ul class="brand-list">
+        <ul class="brand-list list-reset">
           <li class="brand-item">
             <a class="brand-link" href="#">
               <img class="brand-logo" src="img/logo-1.jpg" width="260" height="100" alt="Логотип dji">
@@ -221,9 +225,9 @@
       </section>
       <section class="about-us">
         <h2 class="about-us-title">О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul class="transport-companies">
+        <p class="about-us-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p class="about-us-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+        <ul class="transport-companies list-reset">
           <li>Деловые линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
@@ -232,7 +236,7 @@
       </section>
       <section class="contacts">
         <h2 class="contacts-title">Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <a class="map-link" href="#">
           <img src="img/map 1.png" width="560" height="222" alt="Карта с адресом: Санкт-Петербург, набережная реки Карповки, 5, литера П.">
         </a>
@@ -243,27 +247,27 @@
       <a class="footer-logo logo-device" href="#">
         <img src="img/device-logo2.svg" width="163" height="35" alt="Логотип DEVICE">
       </a>
-      <ul class="top-menu footer-top-menu">
-        <li class="footer-top-menu-item footer-login-link">
-          <a class="top-menu-link footer-link" href="#">Войти</a>
+      <ul class="top-menu footer-top-menu list-reset">
+        <li class="footer-top-menu-item">
+          <a class="top-menu-link footer-link footer-login-link" href="#">Войти</a>
         </li>
-        <li class=" footer-top-menu-item footer-compare-link">
-          <a class="top-menu-link footer-link" href="#">Сравнить</a>
+        <li class=" footer-top-menu-item">
+          <a class="top-menu-link footer-link footer-compare-link" href="#">Сравнить</a>
         </li>
-        <li class="footer-top-menu-item footer-basket-link">
-          <a class="top-menu-link footer-link" href="#">Корзина</a>
+        <li class="footer-top-menu-item">
+          <a class="top-menu-link footer-link footer-basket-link" href="#">Корзина</a>
         </li>
       </ul>
       <nav class="footer-nav">
-        <ul class="site-nav footer-site-nav">
+        <ul class="site-nav footer-site-nav list-reset">
           <li><a class="site-nav-link footer-link" href="#">Доставка</a></li>
           <li><a class="site-nav-link footer-link" href="#">Гарантия</a></li>
           <li><a class="site-nav-link footer-link" href="#">Контакты</a></li>
         </ul>
       </nav>
       <p class="footer-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-      <p class="footer-tel"><a href="tel:+78005558628">Тел.: +7 800 555-86-28</a></p>
-      <ul class="social-list">
+      <p class="footer-tel"><a class="footer-tel-link" href="tel:+78005558628">Тел.: +7 800 555-86-28</a></p>
+      <ul class="social-list list-reset">
         <li class="social-item">
           <a class="social-link fb-link" href="#" aria-label="Наша страница на Facebook"></a>
         </li>
@@ -288,9 +292,9 @@
         <label class="user-comment-field">Текст письма:
           <textarea class="user-comment" name="comment" rows="4" cols="70">В свободной форме</textarea>
         </label>
-        <button class="button-send button" type="submit">Отправить</button>
+        <button class="button-send button btn" type="submit">Отправить</button>
       </form>
-      <button class="button-close button-modal" type="button" aria-label="Закрыть окно"></button>
+      <button class="button-close button-modal btn" type="button" aria-label="Закрыть окно"></button>
     </section>
   </body>
 </html>
