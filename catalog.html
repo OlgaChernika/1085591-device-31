@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Девайс</title>
+  <link rel="preload" href="fonts/gilroyextrabold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/gilroylight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -27,16 +31,16 @@
     </form>
     <ul class="top-menu header-top-menu list-reset">
       <li class="top-menu-item">
-        <a class="header-login-link"href="#">Валентин Петухов</a>
-      </li>
-      <li class="top-menu-item-disabled">
-        <a href="#">Выйти</a>
+        <a class="header-login-link header-link"href="#">Валентин Петухов</a>
       </li>
       <li class="top-menu-item">
-        <a class="header-compare-link" href="#">Сравнить</a>
+        <a class="header-link header-link-disabled" href="#">Выйти</a>
       </li>
       <li class="top-menu-item">
-        <a class="header-basket-link" href="#">Корзина</a>
+        <a class="header-compare-link header-link" href="#">Сравнить</a>
+      </li>
+      <li class="top-menu-item">
+        <a class="header-basket-link header-link" href="#">Корзина</a>
       </li>
     </ul>
     <nav class="header-nav">
@@ -86,11 +90,11 @@
     <section class="filters">
       <h2 class="filters-title filter-section-title">Фильтр:</h2>
       <form class="filter" action="http://echo.htmlacademy.ru" method="get">
-      <fieldset>
+      <fieldset class="filter-fieldset">
         <legend class="filter-legend">Стоимость</legend>
         <div><!-- Тут позже будет кастомный ползунок --></div>
       </fieldset>
-      <fieldset>
+      <fieldset class="filter-fieldset">
         <legend class="filter-legend">Цвет</legend>
         <ul class="list-reset">
           <li>
@@ -115,7 +119,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset>
+      <fieldset class="filter-fieldset">
         <legend class="filter-legend">Bluetooth</legend>
         <ul class="list-reset">
           <li>
@@ -219,17 +223,17 @@
       <img src="img/device-logo2.svg" width="163" height="35" alt="Логотип DEVICE">
     </a>
     <ul class="top-menu footer-top-menu list-reset">
-      <li class="top-menu-item footer-login-link">
-        <a class="top-menu-link footer-link" href="#">Валентин Петухов</a>
+      <li class="footer-top-menu-item">
+        <a class="top-menu-link footer-link footer-login-link" href="#">Валентин Петухов</a>
       </li>
-      <li class="top-menu-item-disabled">
-        <a class="footer-link" href="#">Войти</a>
+      <li class="footer-top-menu-item footer-link-disabled">
+        <a class="top-menu-link footer-link footer-link-disabled" href="#">Выйти</a>
       </li>
-      <li class="top-menu-item footer-compare-link">
-        <a class="top-menu-link footer-link" href="#">Сравнить</a>
+      <li class="footer-top-menu-item">
+        <a class="top-menu-link footer-link footer-compare-link" href="#">Сравнить</a>
       </li>
-      <li class="top-menu-item footer-basket-link">
-        <a class="top-menu-link footer-link" href="#">Корзина</a>
+      <li class="footer-top-menu-item">
+        <a class="top-menu-link footer-link footer-basket-link href="#">Корзина</a>
       </li>
     </ul>
     <nav class="footer-nav">
