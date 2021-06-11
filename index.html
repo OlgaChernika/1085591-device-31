@@ -33,12 +33,12 @@
               <button class="search-button btn" type="submit">Найти</button>
             </form>
             <ul class="top-menu header-top-menu list-reset">
-              <li class="top-menu-item">
+              <li class="top-menu-item header-login">
                 <a class="header-login-link header-link" href="#">Войти</a>
               </li>
               <li class="top-menu-item">
                 <a class="header-compare-link header-link" href="#">Сравнить</a>
-              </li>
+              </li>              
               <li class="top-menu-item">
                 <a class="header-basket-link header-link" href="#">Корзина</a>
               </li>
@@ -46,7 +46,7 @@
           </div>
           <nav class="header-nav">
             <ul class="site-nav header-site-nav list-reset">
-              <li class="catalog-item">
+              <li class="site-nav-item catalog-item">
                 <a class="site-nav-link header-link" href="catalog.html">Каталог товаров</a>
                 <ul class="catalog-nav list-reset">
                   <li class="catalog-nav-item">
@@ -69,9 +69,15 @@
                   </li>
                 </ul>
               </li>
-              <li><a class="site-nav-link header-link" href="#">Доставка</a></li>
-              <li><a class="site-nav-link header-link" href="#">Гарантия</a></li>
-              <li"><a class="site-nav-link header-link" href="#">Контакты</a></li>
+              <li class="site-nav-item">
+                <a class="site-nav-link header-link" href="#">Доставка</a>
+              </li>
+              <li class="site-nav-item">
+                <a class="site-nav-link header-link" href="#">Гарантия</a>
+              </li>
+              <li class="site-nav-item">
+                <a class="site-nav-link header-link" href="#">Контакты</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -81,57 +87,75 @@
       <h1 class="visually-hidden">Магазин гаджетов Девайс</h1>
       <section class="slider container">
         <h2 class="visually-hidden">Промо-слайдер</h2>
-        <ul class="promo-control-list visually-hidden">
-          <li>
-            <a href="#">Первый слайд</a>
+        <ul class="promo-control-list list-reset">
+          <li class="control-item">
+            <a class="control-link control-1" href="#" aria-label="Первый слайд"></a>
           </li>
-          <li>
-            <a href="#">Второй слайд</a>
+          <li class="control-item">
+            <a class="control-link control-2" href="#" aria-label="Второй слайд"></a>
           </li>
-          <li>
-            <a href="#">Третий слайд</a>
+          <li class="control-item control-active">
+            <a class="control-link control-3" href="#" aria-label="Третий слайд"></a>
           </li>
         </ul>
         <ul class="promo-list list-reset">
-          <li class="promo-item slider-1 active">
-            <img class="promo-image" src="img/slider-1.png" width="385" height="486" alt="Палка для селфи">
+          <li class="promo-item slider-1 slider-active">
+            <div class="promo-image">
+              <img src="img/slider-1.png" width="385" height="486" alt="Палка для селфи">
+            </div>
             <div class="promo-wrapper">
               <p class="promo-title">Делай селфи, как Бен Стиллер!</p>
-              <p>Самая длинная палка для селфи доступная в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-              <dl class="characteristic">
-                <dt class="characteristic-info">8,5 м</dt>
-                <dd class="characteristic-title">Длина палки</dd>
-                <dt class="characteristic-info">5 кг</dt>
-                <dd class="characteristic-title">Вес палки</dd>
-                <dt class="characteristic-info">Карбон</dt>
-                <dd class="characteristic-title">Материал</dd>
-              </dl>
+              <p class="promo-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <div class="characteristic-1">
+                <dl class="characteristic-wrapper">
+                  <dt class="characteristic-info">8,5 м</dt>
+                  <dd class="characteristic-title">Длина палки</dd>
+                </dl>
+                <dl class="characteristic-wrapper">
+                  <dt class="characteristic-info">5 кг</dt>
+                  <dd class="characteristic-title">Вес палки</dd>
+                </dl>
+                <dl class="characteristic-wrapper">
+                  <dt class="characteristic-info">Карбон</dt>
+                  <dd class="characteristic-title">Материал</dd>
+                </dl>
+              </div>
               <a class="promo-button button" href="#">Подробнее</a>
             </div>
           </li>
           <li class="promo-item slider-2">
-            <img class="promo-image" src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
+            <div class="promo-image">
+              <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
+            </div>
             <div class="promo-wrapper">
               <p class="promo-title">Худеем правильно!</p>
-              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              <dl class="characteristic">
-                <dt class="characteristic-info">48 часов</dt>
-                <dd class="characteristic-title">Без подзарядки</dd>
-              </dl>
+              <p class="promo-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <div class="characteristic-2">
+                <dl class="characteristic-wrapper">
+                  <dt class="characteristic-info">48 часов</dt>
+                  <dd class="characteristic-title">Без подзарядки</dd>
+                </dl>
+              </div>
               <a class="promo-button button" href="#">Подробнее</a>
             </div>
           </li>
           <li class="promo-item slider-3">
-            <img class="promo-image" src="img/slider-3.png" width="526" height="335" alt="Квадрокоптер с мощным лазером">
+            <div class="promo-image">
+              <img src="img/slider-3.png" width="526" height="335" alt="Квадрокоптер с мощным лазером">
+            </div>
             <div class="promo-wrapper">
               <p class="promo-title">Порхает как бабочка, жалит как пчела!</p>
-              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-              <dl class="characteristic">
-                <dt class="characteristic-info">800 м</dt>
-                <dd class="characteristic-title">Дальность полета</dd>
-                <dt class="characteristic-info">50 м</dt>
-                <dd class="characteristic-title">Радиус поражения</dd>
-              </dl>
+              <p class="promo-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <div class="characteristic-3">
+                <dl class="characteristic-wrapper">
+                  <dt class="characteristic-info">800 м</dt>
+                  <dd class="characteristic-title">Дальность полета</dd>
+                </dl>
+                <dl class="characteristic-wrapper">
+                  <dt class="characteristic-info">50 м</dt>
+                  <dd class="characteristic-title">Радиус поражения</dd>
+                </dl>
+              </div>
               <a class="promo-button button" href="#">Подробнее</a>
             </div>
           </li>
@@ -143,35 +167,35 @@
           <li class="categories-item">
             <a class="categories-link" href="catalog.html">
               <div class="categories-img ctg-1"></div>
-              Виртуальная реальность
+              <p class="categories-title">Виртуальная реальность</p>
             </a>
           </li>
           <li class="categories-item">
             <a class="categories-link" href="catalog.html">
               <div class="categories-img ctg-2"></div>
-              Моноподы для селфи
+              <p class="categories-title">Моноподы<br> для селфи</p>
             </a>
           </li>
           <li class="categories-item">
             <a class="categories-link" href="catalog.html">
               <div class="categories-img ctg-3"></div>
-              Экшн-камеры
+              <p class="categories-title">Экшн-камеры</p>
             </a>
           </li>
           <li class="categories-item">
             <a class="categories-link" href="catalog.html">
               <div class="categories-img ctg-4"></div>
-              Фитнес-браслеты
+              <p class="categories-title">Фитнес-браслеты</p>
             </a>
           </li>
           <li class="categories-item">
             <a class="categories-link" href="catalog.html"><div class="categories-img ctg-5"></div>
-              Умные часы
+              <p class="categories-title">Умные часы</p>
             </a>
           </li>
           <li class="categories-item">
             <a class="categories-link" href="catalog.html"><div class="categories-img ctg-6"></div>
-              Квадрокоптеры
+              <p class="categories-title">Квадрокоптеры</p>
             </a>
           </li>
         </ul>
@@ -191,17 +215,17 @@
             </li>
           </ul>
           <ul class="service-slider list-reset">
-            <li class="service-item item-delivery active-slider">
+            <li class="service-item item-delivery">
               <h3 class="service-title">Доставка</h3>
               <p class="service-info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </li>
             <li class="service-item item-warranty">
               <h3 class="service-title">Гарантия</h3>
-              <p class="service-info">Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+              <p class="service-info">Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
             </li>
-            <li class="service-item item-credit">
+            <li class="service-item item-credit current-slider">
               <h3 class="service-title">Кредит</h3>
-              <p class="service-info">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+              <p class="service-info">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные<br> условия кредита. Выгодные для нашего банка, разумеется.</p>
             </li>
           </ul>
         </div>
@@ -232,18 +256,18 @@
         </ul>
       </section>
       <div class="container columns-wrapper">
-        <section class="about-us">
+        <section class="about-us column">
           <h2 class="about-us-title">О нас</h2>
           <p class="about-us-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p class="about-us-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
           <ul class="transport-companies list-reset">
-            <li>Деловые линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспедиция</li>
+            <li class="company">Деловые линии</li>
+            <li class="company">Автотрейдинг</li>
+            <li class="company">ЖелДорЭкспедиция</li>
           </ul>
           <a class="about-us-button button" href="#">Подробнее о нас</a>
         </section>
-        <section class="contacts">
+        <section class="contacts column">
           <h2 class="contacts-title">Контакты</h2>
           <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <a class="map-link" href="#">
