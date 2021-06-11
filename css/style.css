@@ -238,9 +238,28 @@ img{
 
 .catalog-nav {
     display: none;
+    padding-top: 30px;
+    padding-left: 60px;
+    position: absolute;
+    width: 1160px;
+    min-height: 165px;
+    top: 20px;
+    left: -60px;
+    background-color: var(--bg-color);
+    z-index: 2;
+}
+
+.catalog-item:hover .catalog-nav {
+    display: flex;
+}
+.catalog-nav-item {
+    padding-right: 63px;
+    display: flex;
+    flex-direction: column;
 }
 
 .catalog-nav-link {
+    padding-bottom: 16px;
     font-family: var(--opensans-font-family);
     font-weight: 300;
     font-size: 15px;
