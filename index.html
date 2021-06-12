@@ -83,24 +83,24 @@
         <h2 class="visually-hidden">Промо-слайдер</h2>
         <ul class="promo-control-list list-reset">
           <li class="control-item">
-            <a class="control-link control-1" href="#" aria-label="Первый слайд"></a>
+            <a class="control-link control-1 control-active" href="#" aria-label="Первый слайд"></a>
           </li>
           <li class="control-item">
             <a class="control-link control-2" href="#" aria-label="Второй слайд"></a>
           </li>
-          <li class="control-item control-active">
+          <li class="control-item">
             <a class="control-link control-3" href="#" aria-label="Третий слайд"></a>
           </li>
         </ul>
         <ul class="promo-list list-reset">
-          <li class="promo-item slider-1 slider-active">
+          <li class="promo-item slider-1">
             <div class="promo-image">
               <img src="img/slider-1.png" width="385" height="486" alt="Палка для селфи">
             </div>
             <div class="promo-wrapper">
               <p class="promo-title">Делай селфи, как Бен Стиллер!</p>
               <p class="promo-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-              <div class="characteristic-1">
+              <div class="characteristic characteristic-1">
                 <dl class="characteristic-wrapper">
                   <dt class="characteristic-info">8,5 м</dt>
                   <dd class="characteristic-title">Длина палки</dd>
@@ -124,7 +124,7 @@
             <div class="promo-wrapper">
               <p class="promo-title">Худеем правильно!</p>
               <p class="promo-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              <div class="characteristic-2">
+              <div class="characteristic characteristic-2">
                 <dl class="characteristic-wrapper">
                   <dt class="characteristic-info">48 часов</dt>
                   <dd class="characteristic-title">Без подзарядки</dd>
@@ -133,14 +133,14 @@
               <a class="promo-button button" href="#">Подробнее</a>
             </div>
           </li>
-          <li class="promo-item slider-3">
+          <li class="promo-item slider-3 slider-active">
             <div class="promo-image">
               <img src="img/slider-3.png" width="526" height="335" alt="Квадрокоптер с мощным лазером">
             </div>
             <div class="promo-wrapper">
               <p class="promo-title">Порхает как бабочка, жалит как пчела!</p>
               <p class="promo-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-              <div class="characteristic-3">
+              <div class="characteristic characteristic-3">
                 <dl class="characteristic-wrapper">
                   <dt class="characteristic-info">800 м</dt>
                   <dd class="characteristic-title">Дальность полета</dd>
@@ -159,37 +159,33 @@
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="categories-list list-reset">
           <li class="categories-item">
-            <a class="categories-link" href="catalog.html">
-              <div class="categories-img ctg-1"></div>
-              <p class="categories-title">Виртуальная реальность</p>
+            <a class="categories-link ctg-1" href="catalog.html">
+              Виртуальная реальность
             </a>
           </li>
           <li class="categories-item">
-            <a class="categories-link" href="catalog.html">
-              <div class="categories-img ctg-2"></div>
-              <p class="categories-title">Моноподы<br> для селфи</p>
+            <a class="categories-link ctg-2" href="catalog.html">
+              Моноподы для&nbsp;селфи
             </a>
           </li>
           <li class="categories-item">
-            <a class="categories-link" href="catalog.html">
-              <div class="categories-img ctg-3"></div>
-              <p class="categories-title">Экшн-камеры</p>
+            <a class="categories-link ctg-3" href="catalog.html">
+              Экшн-камеры
             </a>
           </li>
           <li class="categories-item">
-            <a class="categories-link" href="catalog.html">
-              <div class="categories-img ctg-4"></div>
-              <p class="categories-title">Фитнес-браслеты</p>
+            <a class="categories-link ctg-4" href="catalog.html">
+              Фитнес-браслеты
             </a>
           </li>
           <li class="categories-item">
-            <a class="categories-link" href="catalog.html"><div class="categories-img ctg-5"></div>
-              <p class="categories-title">Умные часы</p>
+            <a class="categories-link ctg-5" href="catalog.html">
+              Умные часы
             </a>
           </li>
           <li class="categories-item">
-            <a class="categories-link" href="catalog.html"><div class="categories-img ctg-6"></div>
-              <p class="categories-title">Квадрокоптеры</p>
+            <a class="categories-link ctg-6" href="catalog.html">
+              Квадрокоптеры
             </a>
           </li>
         </ul>
@@ -198,8 +194,8 @@
         <h2 class="visually-hidden">Сервис</h2>
         <div class="container">
           <ul class="service-control-list list-reset">
-            <li class="service-tab tab-active">
-              <a class="service-link" href="#">Доставка</a>
+            <li class="service-tab">
+              <a class="service-link tab-active" href="#">Доставка</a>
             </li>
             <li class="service-tab">
               <a class="service-link" href="#">Гарантия</a>
@@ -209,7 +205,7 @@
             </li>
           </ul>
           <ul class="service-slider list-reset">
-            <li class="service-item item-delivery">
+            <li class="service-item item-delivery current-slide">
               <h3 class="service-title">Доставка</h3>
               <p class="service-info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </li>
@@ -217,7 +213,7 @@
               <h3 class="service-title">Гарантия</h3>
               <p class="service-info">Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
             </li>
-            <li class="service-item item-credit current-slider">
+            <li class="service-item item-credit">
               <h3 class="service-title">Кредит</h3>
               <p class="service-info">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные<br> условия кредита. Выгодные для нашего банка, разумеется.</p>
             </li>
