@@ -659,10 +659,6 @@ img{
     letter-spacing: 0.05em;
 }
 
-/* .categories-title {
-    width: 100%;
-} */
-
 .categories-item:nth-child(4) .categories-link {
     letter-spacing: 0;
 }
