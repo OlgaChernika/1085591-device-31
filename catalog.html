@@ -100,7 +100,22 @@
           <form class="filter" action="http://echo.htmlacademy.ru" method="get">
           <fieldset class="filter-fieldset">
             <legend class="filter-legend">Стоимость</legend>
-            <div class="range">
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="width: 57%;"></div>
+                </div>
+                <button class="toggle toggle-min" style="left: 0%;"></button>
+                <button class="toggle toggle-max" style="left:57%;"></button>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от 
+                  <input class="min-price-input" type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">до 
+                    <input class="max-price-input" type="number" name="max-price" value="5000">
+                  </label>
+              </div>
             </div>
           </fieldset>
           <fieldset class="filter-fieldset">
@@ -108,19 +123,19 @@
             <ul class="color-list list-reset">
               <li class="color-item">
                 <input class="filter-checkbox visually-hidden" type="checkbox" id="color-black" name="color" value="black" checked>
-                <label class="color-label checked" for="color-black">Чёрный</label>
+                <label class="color-label" for="color-black">Чёрный</label>
               </li>
               <li class="color-item">
                 <input class="filter-checkbox visually-hidden" type="checkbox" id="color-white" name="color" value="white" >
                 <label class="color-label " for="color-white">Белый</label>
               </li>
               <li class="color-item">
-                <input class="filter-checkbox visually-hidden" disabled type="checkbox" id="color-blue" name="color" value="blue" checked>
-                <label class="color-label checked" for="color-blue">Синий</label>
+                <input class="filter-checkbox visually-hidden" type="checkbox" id="color-blue" name="color" value="blue" checked>
+                <label class="color-label" for="color-blue">Синий</label>
               </li>
               <li class="color-item">
                 <input class="filter-checkbox visually-hidden" type="checkbox" id="color-red" name="color" value="red" checked>
-                <label class="color-label checked" for="color-red">Красный</label>
+                <label class="color-label" for="color-red">Красный</label>
               </li>
               <li class="color-item">
                 <input class="filter-checkbox visually-hidden" type="checkbox" id="color-pink" name="color" value="pink">
@@ -132,8 +147,8 @@
             <legend class="filter-legend">Bluetooth</legend>
             <ul class="bluetooth-list list-reset">
               <li class="bluetooth-item">
-                <input class="filter-radio-btn visually-hidden" type="radio" id="bluetooth-yes" name="bluetooth" value="bluetooth-yes">
-                <label class="bluetooth-label radio-indicator" for="bluetooth-yes">Есть</label>
+                <input class="filter-radio-btn visually-hidden" checked type="radio" id="bluetooth-yes" name="bluetooth" value="bluetooth-yes">
+                <label class="bluetooth-label" for="bluetooth-yes">Есть</label>
               </li>
               <li class="bluetooth-item">
                 <input class="filter-radio-btn visually-hidden" type="radio" id="bluetooth-no" name="bluetooth" value="bluetooth-no">
@@ -188,7 +203,7 @@
               <li class="product-card">
               <div class="title-wrapper">
                   <h3 class="product-title">
-                    <a class="product-link" href="#">Профессиональная селфи&#8209;палка</a>
+                    <a class="product-link" href="#">Профессиональная <br>селфи-палка</a>
                   </h3>
                   <span class="product-price">1 500 руб.</span>
               </div>
@@ -201,7 +216,7 @@
               <li class="product-card">
                 <div class="title-wrapper">
                   <h3 class="product-title">
-                    <a class="product-link" href="#">Непотопляемая селфи&#8209;палка</a>
+                    <a class="product-link" href="#">Непотопляемая <br>селфи-палка</a>
                   </h3>
                   <span class="product-price">1 500 руб.</span>
                 </div>
