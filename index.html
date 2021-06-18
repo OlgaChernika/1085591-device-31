@@ -79,23 +79,59 @@
     </div>
     <main>
       <h1 class="visually-hidden">Магазин гаджетов Девайс</h1>
-      <section class="slider container">
+      <section class="slider tabs container">
         <h2 class="visually-hidden">Промо-слайдер</h2>
-        <ul class="promo-control-list list-reset">
+        <ul class="promo-control-list tabs-controls list-reset">
           <li class="control-item">
-            <a class="control-link control-1 control-active" href="#" aria-label="Первый слайд"></a>
+            <a class="control-link active" href="#" aria-label="Первый слайд"></a>
           </li>
           <li class="control-item">
-            <a class="control-link control-2" href="#" aria-label="Второй слайд"></a>
+            <a class="control-link" href="#" aria-label="Второй слайд"></a>
           </li>
           <li class="control-item">
-            <a class="control-link control-3" href="#" aria-label="Третий слайд"></a>
+            <a class="control-link" href="#" aria-label="Третий слайд"></a>
           </li>
         </ul>
-        <ul class="promo-list list-reset">
-          <li class="promo-item slider-1">
+        <ul class="promo-list tabs-content list-reset">
+          <li class="promo-item slider-1 active">
             <div class="promo-image">
-              <img src="img/slider-1.png" width="385" height="486" alt="Палка для селфи">
+              <img src="img/slider-1.png" width="526" height="335" alt="Квадрокоптер с мощным лазером">
+            </div>
+            <div class="promo-wrapper">
+              <p class="promo-title">Порхает как бабочка, жалит как пчела!</p>
+              <p class="promo-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <div class="characteristic characteristic-3">
+                <dl class="characteristic-wrapper">
+                  <dt class="characteristic-info">800 м</dt>
+                  <dd class="characteristic-title">Дальность полета</dd>
+                </dl>
+                <dl class="characteristic-wrapper">
+                  <dt class="characteristic-info">50 м</dt>
+                  <dd class="characteristic-title">Радиус поражения</dd>
+                </dl>
+              </div>
+              <a class="promo-button button" href="#">Подробнее</a>
+            </div>
+          </li>
+          <li class="promo-item slider-2">
+            <div class="promo-image">
+              <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
+            </div>
+            <div class="promo-wrapper">
+              <p class="promo-title">Худеем правильно!</p>
+              <p class="promo-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не&nbsp;пропускать занятия и соблюдать диету.</p>
+              <div class="characteristic characteristic-2">
+                <dl class="characteristic-wrapper">
+                  <dt class="characteristic-info">48 часов</dt>
+                  <dd class="characteristic-title">Без подзарядки</dd>
+                </dl>
+              </div>
+              <a class="promo-button button" href="#">Подробнее</a>
+            </div>
+          </li>
+          <li class="promo-item slider-3">
+            <div class="promo-image">
+              <img src="img/slider-3.png" width="385" height="486" alt="Палка для селфи">
             </div>
             <div class="promo-wrapper">
               <p class="promo-title">Делай селфи, как Бен Стиллер!</p>
@@ -112,42 +148,6 @@
                 <dl class="characteristic-wrapper">
                   <dt class="characteristic-info">Карбон</dt>
                   <dd class="characteristic-title">Материал</dd>
-                </dl>
-              </div>
-              <a class="promo-button button" href="#">Подробнее</a>
-            </div>
-          </li>
-          <li class="promo-item slider-2">
-            <div class="promo-image">
-              <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
-            </div>
-            <div class="promo-wrapper">
-              <p class="promo-title">Худеем правильно!</p>
-              <p class="promo-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              <div class="characteristic characteristic-2">
-                <dl class="characteristic-wrapper">
-                  <dt class="characteristic-info">48 часов</dt>
-                  <dd class="characteristic-title">Без подзарядки</dd>
-                </dl>
-              </div>
-              <a class="promo-button button" href="#">Подробнее</a>
-            </div>
-          </li>
-          <li class="promo-item slider-3 slider-active">
-            <div class="promo-image">
-              <img src="img/slider-3.png" width="526" height="335" alt="Квадрокоптер с мощным лазером">
-            </div>
-            <div class="promo-wrapper">
-              <p class="promo-title">Порхает как бабочка, жалит как пчела!</p>
-              <p class="promo-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-              <div class="characteristic characteristic-3">
-                <dl class="characteristic-wrapper">
-                  <dt class="characteristic-info">800 м</dt>
-                  <dd class="characteristic-title">Дальность полета</dd>
-                </dl>
-                <dl class="characteristic-wrapper">
-                  <dt class="characteristic-info">50 м</dt>
-                  <dd class="characteristic-title">Радиус поражения</dd>
                 </dl>
               </div>
               <a class="promo-button button" href="#">Подробнее</a>
@@ -192,28 +192,28 @@
       </section>
       <section class="service">
         <h2 class="visually-hidden">Сервис</h2>
-        <div class="container">
-          <ul class="service-control-list list-reset">
+        <div class="container tabs">
+          <ul class="service-control-list tabs-controls list-reset">
             <li class="service-tab">
-              <a class="service-link tab-active" href="#">Доставка</a>
+              <a class="service-link" href="#">Доставка</a>
             </li>
             <li class="service-tab">
               <a class="service-link" href="#">Гарантия</a>
             </li>
             <li class="service-tab">
-              <a class="service-link" href="#">Кредит</a>
+              <a class="service-link active" href="#">Кредит</a>
             </li>
           </ul>
-          <ul class="service-slider list-reset">
-            <li class="service-item item-delivery current-slide">
+          <ul class="service-slider tabs-content list-reset">
+            <li class="service-item item-delivery">
               <h3 class="service-title">Доставка</h3>
-              <p class="service-info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              <p class="service-info">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,&nbsp;поднимая его на ваш этаж.</p>
             </li>
             <li class="service-item item-warranty">
               <h3 class="service-title">Гарантия</h3>
-              <p class="service-info">Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар,&nbsp;не&nbsp;дом,&nbsp;конечно&nbsp;же.</p>
+              <p class="service-info">Если из-за возгорания купленного у нас товара у вас сгорит дом&nbsp;— не переживайте, мы выдадим вам новый. Товар,&nbsp;не&nbsp;дом,&nbsp;конечно&nbsp;же.</p>
             </li>
-            <li class="service-item item-credit">
+            <li class="service-item item-credit active">
               <h3 class="service-title">Кредит</h3>
               <p class="service-info">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия&nbsp;кредита.&nbsp;Выгодные&nbsp;для нашего банка, разумеется.</p>
             </li>
@@ -328,5 +328,6 @@
       </form>
       <button class="button-close button-modal btn" type="button" aria-label="Закрыть окно"></button>
     </section>
+    <script src="js/script.js"></script> 
   </body>
 </html>
