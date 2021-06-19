@@ -152,8 +152,9 @@ img{
     width: 100%;
     height: 8px;
     background-color: var(--yellow-color);
-    bottom: 16px;
+    top: 50%;
     left: 0;
+    transform: translateY(-50%);
     z-index: -1;
 }
 
@@ -1885,9 +1886,32 @@ img{
 
 .modal {
     display: none;
+    position: relative;
+}
+
+.modal-write-us {
+    padding: 92px 100px 54px;
     width: 960px;
     min-height: 550px;
+    position: absolute;
+    top: 1187px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--bg-white);
     box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+    z-index: 99;
+}
+
+.modal-form {
+    display: grid;
+    grid-template-columns: 360px 360px;
+    grid-template-rows: 82px 199px;
+    gap: 32px 40px;
+}
+
+.user-comment-field {
+    height: 100%;
+    grid-column: 1/-1;
 }
 
 .user-name-field,
@@ -1902,8 +1926,9 @@ img{
 .user-name-input,
 .user-email-input,
 .user-comment {
-    width: 100%;
+    margin-top: 10px;
     padding: 15px 20px;
+    width: 100%;
     font-family: var(--opensans-font-family);
     font-weight: normal;
     font-size: 14px;
@@ -1911,6 +1936,10 @@ img{
     background-color: var(--lighter-grey-color);
     border: none;
     color: var(--black-opacity-color);
+}
+
+.user-comment {
+    padding-bottom: 25px;
 }
 
 .user-name-input:hover,
@@ -1933,12 +1962,15 @@ img{
 }
 
 .button-send {
+    margin-top: 12px;
     padding: 9px 35px;
+    justify-self: left;
 }
 
 .button-close {
-    /* временно */
-    position: relative;
+    position: absolute;
+    top: 20px;
+    right: 20px;
     width: 55px;
     height: 55px;
     background-color: var(--dark-yellow-color);
@@ -1958,12 +1990,11 @@ img{
 .button-close::before {
     content: "";
     position: absolute;
-    width: 30px;
+    width: 26px;
     height: 3px;
-    /* временно */
-    top: 25px;
-    left: 12px;
-    background-color: var(--white-color);
+    top: 26px;
+    left: 15px;
+    background-color: var(--bg-white);
     opacity: 0.7;
     transform: rotate(45deg);
 }
@@ -1971,12 +2002,35 @@ img{
 .button-close::after {
     content: "";
     position: absolute;
-    width: 30px;
+    width: 26px;
     height: 3px;
-    /* временно */
-    top: 25px;
-    left: 12px;
-    background-color: var(--white-color);
+    top: 26px;
+    left: 15px;
+    background-color: var(--bg-white);
     opacity: 0.7;
     transform: rotate(-45deg);
+}
+
+.modal-map {
+    width: 960px;
+    min-height: 573px;
+    display: none;
+    position: absolute;
+    top: 1850px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--bg-white);
+    background-image: url("/img/map-big.png");
+    background-position: -15px -5px;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+    z-index: 99;
+}
+
+.modal-map .button-close {
+    top: 28px;
+    right: 28px;
+}
+
+.modal.show {
+    display: block;
 }
