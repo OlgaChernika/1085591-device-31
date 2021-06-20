@@ -169,6 +169,7 @@ img{
 .main-header {
     margin-top: 40px;
     padding: 0 60px;
+    padding-bottom: 110px;
     position: relative;
     min-height: 300px;
     background-color: var(--bg-color);
@@ -198,7 +199,7 @@ img{
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: min-content 1fr;
-    gap: 105px;
+    column-gap: 105px;
 }
 
 .header-top-menu {
@@ -206,7 +207,7 @@ img{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+    column-gap: 15px;
     justify-items: right;
 }
 
@@ -221,6 +222,10 @@ img{
 
 .header-top-menu .header-link {
     padding-left: 20px;
+}
+
+.header-nav {
+    margin-bottom: 30px;
 }
 
 .header-site-nav {
@@ -430,6 +435,7 @@ img{
 
 .inner-page .main-header {
     margin-bottom: 44px;
+    padding-bottom: 0;
     min-height: 186px;
 }
 
@@ -468,9 +474,12 @@ img{
 
 .promo-control-list {
     display: flex;
+    width: 210px;
     min-height: 12px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     position: absolute;
-    bottom:217px;
+    top: 327px;
     right: 98px;
     z-index: 10;
 }
@@ -632,19 +641,21 @@ img{
     width: 100%;
     order: 4;
     display: grid;
+    grid-template-columns: min-content min-content min-content;
+    column-gap: 65px;
 }
 
 .characteristic-1 {
-    grid-template-columns: 160px 135px 150px;
+    /* grid-template-columns: 158px 150px; */
 }
 
 .characteristic-2 {
-    grid-template-columns: 200px 1fr;
-    column-gap: 60px;
+    /* grid-template-columns: 200px 1fr; */
 }
 
 .characteristic-3 {
-    grid-template-columns: 198px 150px 1fr;
+    /* grid-template-columns: 160px 135px 150px; */
+    column-gap: 60px;
 }
 
 .characteristic-info {
@@ -762,7 +773,18 @@ img{
 
 .service {
     padding-bottom: 70px;
+    position: relative;
     background-image: linear-gradient(to bottom, var(--bg-white) 100px, var(--light-grey-color) 100px);
+}
+
+.service::before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 100%;
+    top: 0;
+    left: 457px;
+    background: linear-gradient(to top, transparent 0px, transparent 70px, #000 70px, #000 100%);
 }
 
 .service .container {
@@ -849,10 +871,10 @@ img{
 }
 
 .service-item {
-    padding: 70px 190px 60px 116px;
+    padding: 70px 190px 60px 122px;
     display: none;
     position: relative;
-    border-left: 6px solid var(--black-color);
+    bborder-left: 6px solid var(--black-color);
 }
 
 .service-item::after {
@@ -1478,6 +1500,7 @@ img{
 
 .catalog-list {
     margin-bottom: 40px;
+    min-height: 956px;
     display: grid;
     grid-template-columns: repeat(2, 360px);
     gap: 50px 40px;
@@ -1670,7 +1693,7 @@ img{
 
 .main-footer .container {
     padding-top: 46px;
-    padding-bottom: 65px;
+    padding-bottom: 45px;
     display: grid;
     grid-template-rows: min-content;
 }
@@ -1688,6 +1711,7 @@ img{
 }
 
 .footer-wrapper-bottom {
+    margin-bottom: 20px;
     padding-left: 137px;
     position: relative;
     display: grid;
@@ -1708,7 +1732,13 @@ img{
     justify-self: right;
     display: flex;
     min-width: 325px;
+    max-width: 500px;
+    flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.footer-top-menu-item {
+    padding-left: 42px;;
 }
 
 .footer-nav {
@@ -1717,6 +1747,7 @@ img{
 
 .footer-site-nav {
     margin-right: 55px;
+    max-width: 500px;
     display: grid;
     grid-template-columns: repeat(3, auto);
     gap: 32px;
@@ -1893,10 +1924,10 @@ img{
     padding: 92px 100px 54px;
     width: 960px;
     min-height: 550px;
-    position: absolute;
-    top: 1187px;
+    position: fixed;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     background-color: var(--bg-white);
     box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
     z-index: 99;
@@ -2015,10 +2046,10 @@ img{
     width: 960px;
     min-height: 573px;
     display: none;
-    position: absolute;
-    top: 1850px;
+    position: fixed;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     background-color: var(--bg-white);
     background-image: url("/img/map-big.png");
     background-position: -15px -5px;

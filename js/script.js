@@ -12,8 +12,8 @@ const clearActive = (controls, contents) => {
 
 const addActive = (controls, contents) => {
     controls.forEach((control, index) => {
-      control.addEventListener("click", (link) => {
-        link.preventDefault();
+      control.addEventListener("click", (evt) => {
+        evt.preventDefault();
         clearActive(controls, contents);
         control.classList.add("active");
         contents[index].classList.add("active");
@@ -29,13 +29,13 @@ if (tabBlock.length) {
     });
 };
 
-let writeUsLink = document.querySelector(".open-modal-write-us");
-let mapLink = document.querySelector(".open-modal-map");
+const writeUsLink = document.querySelector(".open-modal-write-us");
+const mapLink = document.querySelector(".open-modal-map");
 const modals = document.querySelectorAll(".modal");
-let popupWriteUs = document.querySelector(".modal-write-us");
-let popupMap = document.querySelector(".modal-map");
-let closeWriteUsButton = popupWriteUs.querySelector(".button-close");
-let closeMapButton = popupMap.querySelector(".button-close");
+const popupWriteUs = document.querySelector(".modal-write-us");
+const popupMap = document.querySelector(".modal-map");
+const closeWriteUsButton = popupWriteUs.querySelector(".button-close");
+const closeMapButton = popupMap.querySelector(".button-close");
 
 const clearModalShow = (modals) => {
   modals.forEach((modal) => {
@@ -43,14 +43,14 @@ const clearModalShow = (modals) => {
   });
 };
 
-writeUsLink.addEventListener("click", (link) => {
-    link.preventDefault();
+writeUsLink.addEventListener("click", (evt) => {
+    evt.preventDefault();
     clearModalShow(modals);
     popupWriteUs.classList.add("show");
 });
 
-mapLink.addEventListener("click", (link) => {
-  link.preventDefault();
+mapLink.addEventListener("click", (evt) => {
+  evt.preventDefault();
   clearModalShow(modals);
   popupMap.classList.add("show");
 });
