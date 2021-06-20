@@ -36,8 +36,8 @@
             <li class="top-menu-item">
               <a class="header-login-link header-link"href="#">Валентин Петухов</a>
             </li>
-            <li class="top-menu-item link-disabled">
-              <a class="header-link header-link-disabled" href="#">Выйти</a>
+            <li class="top-menu-item link-output">
+              <a class="header-link header-link-output" href="#">Выйти</a>
             </li>
             <li class="top-menu-item">
               <a class="header-compare-link header-link" href="#">Сравнить</a>
@@ -48,7 +48,7 @@
           </ul>
         </div>
         <nav class="header-nav">
-          <ul class="site-nav header-site-nav list-reset">
+          <ul class="list-reset">
             <li class="site-nav-item catalog-item">
               <a class="site-nav-link header-link" href="catalog.html">Каталог товаров</a>
               <ul class="catalog-nav list-reset">
@@ -66,6 +66,8 @@
                 </li>
               </ul>
             </li>
+          </ul>
+          <ul class="site-nav header-site-nav list-reset">
             <li class="site-nav-item">
               <a class="site-nav-link header-link" href="#">Доставка</a>
             </li>
@@ -90,7 +92,7 @@
         <a class="breadcrumbs-link" href="#">Каталог товаров</a>
       </li class="breadcrumbs-item">
       <li>
-        <a class="breadcrumbs-link breadcrumbs-current" href="#">Моноподы для селфи</a>
+        <a class="breadcrumbs-link current" href="#">Моноподы для селфи</a>
       </li>
     </ul>
     <div class="catalog-page-wrapper">
@@ -105,16 +107,8 @@
                 <div class="scale">
                   <div class="bar" style="width: 57%;"></div>
                 </div>
-                <button class="toggle toggle-min" aria-label="Настроить минимальную цену" style="left: 0%;"></button>
-                <button class="toggle toggle-max" aria-label="Настроить максимальную цену" style="left:57%;"></button>
-              </div>
-              <div class="price-controls">
-                <label class="min-price">от 
-                  <input class="min-price-input" type="number" name="min-price" value="0">
-                </label>
-                <label class="max-price">до 
-                    <input class="max-price-input" type="number" name="max-price" value="5000">
-                  </label>
+                <button class="toggle toggle-min" aria-label="Настроить минимальную цену" style="left: 0%;"><span class="min-price">от 0</span></button>
+                <button class="toggle toggle-max" aria-label="Настроить максимальную цену" style="left:57%;"><span class="max-price">до 5000</span></button>
               </div>
             </div>
           </fieldset>
@@ -164,7 +158,7 @@
             <h2 class="sorting-title filter-section-title">Сортировка:</h2>
             <ul class="sorting-list list-reset">
               <li class="sorting-item">
-                <a class="sorting-link sorting-link-current" href="#">По цене</a>
+                <a class="sorting-link current" href="#">По цене</a>
               </li>
               <li class="sorting-item">
                 <a class="sorting-link" href="#">По типу</a>
@@ -175,7 +169,7 @@
             </ul>
             <ul class="sorting-icon-list list-reset">
               <li>
-                <a class="sorting-icon icon-up icon-current" href="#" aria-label="Сортировать товары по возрастанию">
+                <a class="sorting-icon icon-up current" href="#" aria-label="Сортировать товары по возрастанию">
                 </a>
               </li>
               <li>
@@ -270,8 +264,8 @@
           <li class="footer-top-menu-item">
             <a class="top-menu-link footer-link footer-login-link" href="#">Валентин Петухов</a>
           </li>
-          <li class="footer-top-menu-item footer-link-disabled">
-            <a class="top-menu-link footer-link footer-link-disabled" href="#">Выйти</a>
+          <li class="footer-top-menu-item">
+            <a class="top-menu-link footer-link footer-link-output" href="#">Выйти</a>
           </li>
           <li class="footer-top-menu-item">
             <a class="top-menu-link footer-link footer-compare-link" href="#">Сравнить</a>
