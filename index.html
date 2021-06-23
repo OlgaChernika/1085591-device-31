@@ -23,7 +23,7 @@
     <div class="container">
       <header class="main-header">
         <div class="header-wrapper">
-          <a class="header-logo logo-device" href="#">
+          <a class="header-logo logo-device" aria-label="Перейти на главную страницу магазина DEVICE" href="#">
             <img src="img/device-logo.svg" width="163" height="35" alt="Логотип DEVICE"> 
           </a>
           <div class="top-menu-wrapper">
@@ -226,22 +226,22 @@
         <h2 class="visually-hidden">Популярные бренды</h2>
         <ul class="brand-list list-reset">
           <li class="brand-item">
-            <a class="brand-link" href="#">
+            <a class="brand-link" href="#" aria-label="Перейти на сайт компании DJI">
               <img class="brand-logo" src="img/logo-1.jpg" width="260" height="100" alt="Логотип dji">
             </a>
           </li>
           <li class="brand-item">
-            <a class="brand-link" href="#">
+            <a class="brand-link" href="#" aria-label="Перейти на сайт компании SP Gadgets">
               <img class="brand-logo" src="img/logo-2.jpg" width="260" height="100" alt="Логотип sp gadgets">
             </a>
           </li>
           <li class="brand-item">
-            <a class="brand-link" href="#">
+            <a class="brand-link" href="#" aria-label="Перейти на сайт компании GoPro">
               <img class="brand-logo" src="img/logo-3.jpg" width="260" height="100" alt="Логотип GoPro">
             </a>
           </li>
           <li class="brand-item">
-            <a class="brand-link" href="#">
+            <a class="brand-link" href="#" aria-label="Перейти на сайт компании VIVE">
               <img class="brand-logo" src="img/logo-4.jpg" width="260" height="100" alt="Логотип vive">
             </a>
           </li>
@@ -262,7 +262,7 @@
         <section class="contacts column">
           <h2 class="contacts-title">Контакты</h2>
           <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <a class="map-link open-modal-map" href="#">
+          <a class="map-link open-modal-map" href="#" aria-label="Открыть карту с адресом магазина">
             <img src="img/map 1.png" width="560" height="222" alt="Карта с адресом: Санкт-Петербург, набережная реки Карповки, 5, литера П.">
           </a>
           <a class="contacts-button open-modal-write-us button" href="#">Напишите нам</a>
@@ -272,7 +272,7 @@
     <footer class="main-footer">
      <div class="container">
         <div class="footer-wrapper-top">
-          <a class="footer-logo logo-device" href="#">
+          <a class="footer-logo logo-device" href="#" aria-label="Перейти на главную страницу магазина DEVICE">
             <img src="img/device-logo2.svg" width="163" height="35" alt="Логотип DEVICE">
           </a>
           <ul class="top-menu footer-top-menu list-reset">
@@ -296,7 +296,7 @@
               <li><a class="site-nav-link footer-link" href="#">Контакты</a></li>
             </ul>
           </nav>
-          <p class="footer-tel"><a class="footer-tel-link" href="tel:+78005558628">Тел.: +7 800 555-86-28</a></p>
+          <p class="footer-tel"><a class="footer-tel-link" href="tel:+78005558628" aria-label="Наш телефон">Тел.: +7 800 555-86-28</a></p>
         </div>
         <div class="footer-wrapper-bottom">
           <ul class="social-list list-reset">
@@ -314,6 +314,7 @@
         </div>
      </div>
     </footer>
+    <div class="overlay"></div>
     <section class="modal modal-write-us">
       <h2 class="visually-hidden">Напишите нам</h2>
       <form class="modal-form" action="http://echo.htmlacademy.ru" method="POST">
@@ -332,7 +333,7 @@
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как нас найти</h2>
-        <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.818026615572!2d30.315192316141147!3d59.968341981886994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0x74d4f0cbfe1fd995!2z0L3QsNCxLiBQ0LXQutC4INCa0LDRgNC_0L7QstC60LgsIDUg0LrQvtGA0L_Rg9GBINCfLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk3MDIy!5e0!3m2!1sru!2sru!4v1624102363687!5m2!1sru!2sru" width="100%" height="573" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.818026615572!2d30.315192316141147!3d59.968341981886994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0x74d4f0cbfe1fd995!2z0L3QsNCxLiBQ0LXQutC4INCa0LDRgNC_0L7QstC60LgsIDUg0LrQvtGA0L_Rg9GBINCfLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk3MDIy!5e0!3m2!1sru!2sru!4v1624102363687!5m2!1sru!2sru" width="100%" height="573" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       <button class="button-close button-modal btn" type="button" aria-label="Закрыть окно"></button>
     </section>
     <script src="js/script.js"></script> 
