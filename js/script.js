@@ -4,7 +4,7 @@ const clearActive = (controls, contents) => {
     controls.forEach((control) => {
       control.classList.remove("active");
     });
-    
+
     contents.forEach((content) => {
       content.classList.remove("active");
     });
@@ -35,55 +35,58 @@ const modals = document.querySelectorAll(".modal");
 const overlay = document.querySelector(".overlay");
 const popupWriteUs = document.querySelector(".modal-write-us");
 const popupMap = document.querySelector(".modal-map");
-const closeWriteUsButton = popupWriteUs.querySelector(".button-close");
-const closeMapButton = popupMap.querySelector(".button-close");
 const userNameInput = popupWriteUs.querySelector(".user-name-input");
+const userLoginInput = popupWriteUs.querySelector(".user-email-input");
+const writeUsForm = popupWriteUs.querySelector(".modal-form");
 
-const clearModalShow = (modals) => {
-  modals.forEach((modal) => {
-    modal.classList.remove("show");
-  });
+const clearModalShow = () => {
+  document.querySelector(".modal.show").classList.remove("show");
+  clearOverlay();
 };
 
-const clearOverlay = (overlay) => {
+const clearOverlay = () => {
   overlay.classList.remove("show");
 };
 
 writeUsLink.addEventListener("click", (evt) => {
     evt.preventDefault();
-    clearModalShow(modals);
     overlay.classList.add("show");
     popupWriteUs.classList.add("show");
     userNameInput.focus();
+    document.addEventListener("click", onDocumentClick);
 });
 
 mapLink.addEventListener("click", (evt) => {
   evt.preventDefault();
-  clearModalShow(modals);
   overlay.classList.add("show");
   popupMap.classList.add("show");
-  popupMap.focus();
+  popupMap.querySelector(".button-close").focus();
+  document.addEventListener("click", onDocumentClick);
 });
 
-closeWriteUsButton.addEventListener("click", () => {
-  clearModalShow(modals);
-  clearOverlay(overlay);
-});
-
-closeMapButton.addEventListener("click", () => {
-  clearModalShow(modals);
-  clearOverlay(overlay);
-});
+const onDocumentClick = ({target}) => {
+  if (target.closest(".button-close") || target.closest(".overlay")) {
+    clearModalShow(modals);
+    clearOverlay();
+    popupWriteUs.classList.remove("error");
+    document.removeEventListener("click", onDocumentClick);
+  };
+};
 
 window.addEventListener("keydown", (evt) => {
   if (evt.key === "Esc" || evt.key === "Escape") {
     evt.preventDefault();
     clearModalShow(modals);
-    clearOverlay(overlay);
+    popupWriteUs.classList.remove("error");
   };
 });
 
-overlay.addEventListener("click", () => {
-  clearModalShow(modals);
-  clearOverlay(overlay);
+writeUsForm.addEventListener("submit", (evt) => {
+  if (!userLoginInput.value) {
+    evt.preventDefault();
+    popupWriteUs.classList.remove("error");
+    popupWriteUs.offsetWidth = popupWriteUs.offsetWidth;
+    popupWriteUs.classList.add("error");
+    userLoginInput.focus();
+  };
 });

@@ -74,7 +74,7 @@
 
 html {
     height: 100%;
-    box-sizing: border-box;  
+    box-sizing: border-box;
 }
 
 body {
@@ -716,7 +716,7 @@ img{
     height: 160px;
     top: 0;
     left: 0;
-    background-color: var(--bg-color);   
+    background-color: var(--bg-color);
 }
 
 .categories-link::after {
@@ -877,7 +877,7 @@ img{
     padding: 70px 190px 60px 122px;
     display: none;
     position: relative;
-    
+
 }
 
 .service-item::after {
@@ -1003,7 +1003,7 @@ img{
     margin-bottom: 15px;
     padding-left: 32px;
     position: relative;
-    
+
 }
 
 .about-us-button {
@@ -1018,7 +1018,7 @@ img{
     height: 8px;
     top: 10px;
     left: 0;
-    border: 2px solid var(--light-grey-color); 
+    border: 2px solid var(--light-grey-color);
     border-radius: 50%;
 }
 
@@ -1937,7 +1937,8 @@ img{
 /* ---------------------------modal--------------------------- */
 
 .modal {
-    display: none;
+    visibility: hidden;
+    transform: translate(-100vw, -50%);
     position: relative;
 }
 
@@ -1948,7 +1949,6 @@ img{
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: var(--bg-white);
     box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
     z-index: 99;
@@ -2066,11 +2066,9 @@ img{
 .modal-map {
     width: 960px;
     min-height: 573px;
-    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: var(--bg-white);
     background-image: url("/img/map-big.png");
     background-position: -15px -5px;
@@ -2084,7 +2082,10 @@ img{
 }
 
 .modal.show {
-    display: block;
+    visibility: visible;
+    animation-name: bounse-show;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
 }
 
 .overlay.show::before {
@@ -2097,4 +2098,53 @@ img{
     width: 100%;
     background: rgba(0, 0, 0, 0);
     z-index: 30;
-  }
+}
+
+.modal.error {
+    animation-name: shake;
+    animation-duration: 0.6s;
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translate(-50%, -50%);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translate(-52%, -50%);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translate(-48%, -50%);
+    }
+}
+
+@keyframes bounse-show {
+    0% {
+        transform: translate(-100vw, -50%);
+    }
+
+    50% {
+        transform: translate(-55%, -50%);
+    }
+
+    70% {
+        transform: translate(-45%, -50%);
+    }
+
+    90% {
+        transform: translate(-52%, -50%);
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
