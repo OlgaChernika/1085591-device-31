@@ -2083,7 +2083,7 @@ img{
 
 .modal.show {
     visibility: visible;
-    animation-name: bounse-show;
+    animation-name: bounce-show;
     animation-duration: 0.5s;
     animation-fill-mode: both;
 }
@@ -2127,7 +2127,7 @@ img{
     }
 }
 
-@keyframes bounse-show {
+@keyframes bounce-show {
     0% {
         transform: translate(-100vw, -50%);
     }
