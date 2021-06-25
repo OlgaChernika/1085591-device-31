@@ -38,7 +38,6 @@ const popupMap = document.querySelector(".modal-map");
 const closeWriteUsButton = popupWriteUs.querySelector(".button-close");
 const closeMapButton = popupMap.querySelector(".button-close");
 const userNameInput = popupWriteUs.querySelector(".user-name-input");
-const mapIframe = popupMap.querySelector(".map-iframe");
 
 const clearModalShow = (modals) => {
   modals.forEach((modal) => {
@@ -63,7 +62,7 @@ mapLink.addEventListener("click", (evt) => {
   clearModalShow(modals);
   overlay.classList.add("show");
   popupMap.classList.add("show");
-  mapIframe.focus();
+  popupMap.focus();
 });
 
 closeWriteUsButton.addEventListener("click", () => {
@@ -72,6 +71,19 @@ closeWriteUsButton.addEventListener("click", () => {
 });
 
 closeMapButton.addEventListener("click", () => {
+  clearModalShow(modals);
+  clearOverlay(overlay);
+});
+
+window.addEventListener("keydown", (evt) => {
+  if (evt.key === "Esc" || evt.key === "Escape") {
+    evt.preventDefault();
+    clearModalShow(modals);
+    clearOverlay(overlay);
+  };
+});
+
+overlay.addEventListener("click", () => {
   clearModalShow(modals);
   clearOverlay(overlay);
 });
