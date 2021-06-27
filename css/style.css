@@ -4,8 +4,8 @@
   font-weight: 300;
   font-display: swap;
   src: local("Gilroy"),
-       url("/fonts/gilroylight.woff2") format("woff2"),
-       url("/fonts/gilroylight.woff") format("woff");
+       url("../fonts/gilroylight.woff2") format("woff2"),
+       url("../fonts/gilroylight.woff") format("woff");
 }
 
 @font-face {
@@ -14,8 +14,8 @@
   font-weight: 800;
   font-display: swap;
   src: local("Gilroy"),
-       url("/fonts/gilroyextrabold.woff2") format("woff2"),
-       url("/fonts/gilroyextrabold.woff") format("woff");
+       url("../fonts/gilroyextrabold.woff2") format("woff2"),
+       url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
@@ -24,8 +24,8 @@
   font-weight: 300;
   font-display: swap;
   src: local("Open Sans"),
-       url("/fonts/opensanslight.woff2") format("woff2"),
-       url("/fonts/opensanslight.woff") format("woff");
+       url("../fonts/opensanslight.woff2") format("woff2"),
+       url("../fonts/opensanslight.woff") format("woff");
 }
 
 @font-face {
@@ -34,8 +34,8 @@
   font-weight: 400;
   font-display: swap;
   src: local("Open Sans"),
-       url("/fonts/opensans.woff2") format("woff2"),
-       url("/fonts/opensans.woff") format("woff");
+       url("../fonts/opensans.woff2") format("woff2"),
+       url("../fonts/opensans.woff") format("woff");
 }
 
 :root {
@@ -305,7 +305,7 @@ img {
 .header-login-link::before {
   content: "";
   position: absolute;
-  background-image: url("/img/icon_user.svg");
+  background-image: url("../img/icon_user.svg");
   background-repeat: no-repeat;
   width: 13px;
   height: 14px;
@@ -316,7 +316,7 @@ img {
 .header-compare-link::before {
   content: "";
   position: absolute;
-  background-image: url("/img/statistics.svg");
+  background-image: url("../img/statistics.svg");
   background-repeat: no-repeat;
   width: 14px;
   height: 14px;
@@ -327,7 +327,7 @@ img {
 .header-basket-link::before {
   content: "";
   position: absolute;
-  background-image: url("/img/basket-icon.svg");
+  background-image: url("../img/basket-icon.svg");
   background-repeat: no-repeat;
   width: 10px;
   height: 10px;
@@ -373,7 +373,7 @@ img {
 .search-icon::before {
   content: "";
   position: absolute;
-  background-image: url("/img/icon_search.svg");
+  background-image: url("../img/icon_search.svg");
   width: 16px;
   height: 16px;
   top: 16px;
@@ -755,28 +755,28 @@ img {
 }
 
 .ctg-1::after {
-  background-image: url("/img/popular-1.svg");
+  background-image: url("../img/popular-1.svg");
 }
 
 .ctg-2::after {
   top: 5px;
-  background-image: url("/img/popular-2.svg");
+  background-image: url("../img/popular-2.svg");
 }
 
 .ctg-3::after {
-  background-image: url("/img/popular-3.svg");
+  background-image: url("../img/popular-3.svg");
 }
 
 .ctg-4::after {
-  background-image: url("/img/popular-4.svg");
+  background-image: url("../img/popular-4.svg");
 }
 
 .ctg-5::after {
-  background-image: url("/img/popular-5.svg");
+  background-image: url("../img/popular-5.svg");
 }
 
 .ctg-6::after {
-  background-image: url("/img/popular-6.svg");
+  background-image: url("../img/popular-6.svg");
 }
 
 .categories-link:active {
@@ -920,7 +920,7 @@ img {
   height: 164px;
   top: 70px;
   right: 2px;
-  background-image: url("/img/delivery.png");
+  background-image: url("../img/delivery.png");
 }
 
 .item-warranty::after {
@@ -928,7 +928,7 @@ img {
   height: 195px;
   top: 52px;
   right: -16px;
-  background-image: url("/img/warranty.png");
+  background-image: url("../img/warranty.png");
 }
 
 .item-credit::after {
@@ -936,7 +936,7 @@ img {
   height: 188px;
   top: 47px;
   right: 8px;
-  background-image: url("/img/credit.png");
+  background-image: url("../img/credit.png");
 }
 
 /* ----------------------brands----------------------------- */
@@ -1103,7 +1103,7 @@ height: 573px;
   height: 6px;
   top: 7px;
   right: 3px;
-  background-image: url("/img/icon_arrow_nav.svg");
+  background-image: url("../img/icon_arrow_nav.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1317,7 +1317,7 @@ margin-left: 60px;
   height: 10px;
   top: 6px;
   left: 5px;
-  background-image: url("/img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
 }
 
@@ -1378,7 +1378,7 @@ margin-left: 60px;
 }
 
 .filter-label {
-display: flex;
+  display: flex;
 }
 
 .filter-input:focus + .filter-label::before,
@@ -1471,18 +1471,18 @@ display: flex;
   padding: 15px;
   width: 10px;
   height: 11px;
-  background-image: url("/img/icon-up-dir.svg");
+  background-image: url("../img/icon-up-dir.svg");
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.2;
 }
 
 .icon-up {
-  background-image: url("/img/icon-up-dir.svg");
+  background-image: url("../img/icon-up-dir.svg");
 }
 
 .icon-down {
-  background-image: url("/img/icon-down-dir.svg");
+  background-image: url("../img/icon-down-dir.svg");
 }
 
 .sorting-icon:hover,
@@ -1846,7 +1846,7 @@ display: flex;
 .footer-login-link::before {
   content: "";
   position: absolute;
-  background-image: url("/img/icon_user2.svg");
+  background-image: url("../img/icon_user2.svg");
   background-repeat: no-repeat;
   width: 13px;
   height: 14px;
@@ -1867,7 +1867,7 @@ display: flex;
 .inner-page .footer-login-link::before {
   content: "";
   position: absolute;
-  background-image: url("/img/icon_user3.svg");
+  background-image: url("../img/icon_user3.svg");
   background-repeat: no-repeat;
   width: 13px;
   height: 14px;
@@ -1878,7 +1878,7 @@ display: flex;
 .footer-compare-link::before {
   content: "";
   position: absolute;
-  background-image: url("/img/statistics2.svg");
+  background-image: url("../img/statistics2.svg");
   background-repeat: no-repeat;
   width: 14px;
   height: 14px;
@@ -1889,7 +1889,7 @@ display: flex;
 .footer-basket-link::before {
   content: "";
   position: absolute;
-  background-image: url("/img/basket-icon2.svg");
+  background-image: url("../img/basket-icon2.svg");
   background-repeat: no-repeat;
   width: 10px;
   height: 10px;
@@ -1933,17 +1933,17 @@ display: flex;
 }
 
 .fb-link {
-  background-image: url("/img/fb-icon.svg");
+  background-image: url("../img/fb-icon.svg");
   background-repeat: no-repeat;
 }
 
 .inst-link {
-  background-image: url("/img/insta-icon.svg");
+  background-image: url("../img/insta-icon.svg");
   background-repeat: no-repeat;
 }
 
 .tw-link {
-  background-image: url("/img/twitter-icon.svg");
+  background-image: url("../img/twitter-icon.svg");
   background-repeat: no-repeat;
 }
 
@@ -1951,7 +1951,7 @@ display: flex;
   justify-self: right;
   width: 115px;
   height: 33px;
-  background-image: url("/img/logo_htmlacademy.svg");
+  background-image: url("../img/logo_htmlacademy.svg");
   background-repeat: no-repeat;
 }
 
@@ -2100,7 +2100,7 @@ display: flex;
   top: 50%;
   left: 50%;
   background-color: var(--bg-white);
-  background-image: url("/img/map-big.png");
+  background-image: url("../img/map-big.png");
   background-position: -15px -5px;
   box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
   z-index: 99;
